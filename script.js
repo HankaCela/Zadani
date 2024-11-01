@@ -1,12 +1,11 @@
 const email = prompt("Zadejte svůj e-mail:");
-const msgElement = document.getElementById("msg");
+const message = document.querySelector("#msg");
 
 if (validator.isEmail(email)) {
-    msgElement.textContent = "E-mail v pořádku";
-    msgElement.classList.add("msg--valid");
-    msgElement.classList.remove("msg--invalid");
+    message.textContent = "E-mail v pořádku";
+  message.classList.add("msg--valid");
+  console.log("OK");
 } else {
-    msgElement.textContent = "Neplatný e-mail";
-    msgElement.classList.add("msg--invalid");
-    msgElement.classList.remove("msg--valid");
+  message.textContent = "Neplatný e-mail";
+  message.classList.add("msg--invalid");
 }
