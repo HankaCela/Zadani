@@ -1,0 +1,10 @@
+.msg--valid {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+.msg--invalid {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
